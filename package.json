@@ -1,0 +1,14 @@
+{
+  "name": "selenium-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node Test-Cases/facebook-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.18.1"
+  }
+}
