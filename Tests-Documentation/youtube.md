@@ -84,3 +84,6 @@ youtubeTest();
 - The test might require adjustments if there are changes in the structure or behavior of the YouTube website.
 - This is a basic test case covering the search functionality. Additional tests can be implemented to cover more scenarios and edge cases.
 - The test seems to be working, based on the logs I have introduced to debug. However, I am not fully convinced of the test cases success. I encountered some problems with the text input; therefore, Im not entirely sure its working properly and will need further investigation and knowledge I do not currently possess.
+
+### UPDATED: 
+- The test case has been fixed and the test results have been verified.

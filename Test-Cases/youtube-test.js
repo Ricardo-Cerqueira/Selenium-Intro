@@ -3,6 +3,7 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
 async function youtubeTest() {
   let driver = await new Builder().forBrowser('chrome').build();
   try {
+    await driver.manage().window().maximize();
     await driver.get('http://www.youtube.com');
     console.log("Page loaded successfully.");
     await driver.sleep(3000);
@@ -15,23 +16,18 @@ async function youtubeTest() {
     await driver.sleep(3000);
 
     // Finding the search ID 
-    const searchBox = await driver.wait(until.elementLocated(By.xpath('/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox/form/div[1]/div[1]')), 10000);
-    await driver.wait(until.elementIsVisible(searchBox), 10000);
-    await driver.wait(until.elementIsEnabled(searchBox), 10000);
-    console.log("Found the search box");
-    await driver.sleep(4000);
-    await searchBox.click();
+    const searchBox = await driver.findElement(By.xpath('/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox')).click();
     console.log("clicked on box");
+    await driver.sleep(4000);
 
     //Input the intendend text to search
-    await driver.executeScript("arguments[0].value = 'Goku vs Jiren'", searchBox);
+    await driver.findElement(By.xpath('/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox/form/div[1]/div[1]/div/div[2]/input')).sendKeys('Goku vs Jiren');
     console.log("Input text successfully");
 
     // clicking on search button
-    const searchButton = await driver.wait(until.elementLocated(By.id('search-icon-legacy')), 10000);
-    console.log("Found the search button");
-    await searchButton.click();
+    await driver.findElement(By.id('search-icon-legacy')).click();
     console.log("clicked on search button");
+    await driver.sleep(10000);
 
     /* Submit the form (optional)
         await searchBox.sendKeys(Key.ENTER);
