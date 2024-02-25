@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node Test-Cases/youtube-test.js"
-    
+    "test": "node Test-Cases/facebook-test.js",
+    "run-all": "mocha Test-Cases/**/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "selenium-webdriver": "^4.18.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
   }
 }
