@@ -6,7 +6,8 @@ async function exampleTest() {
     await driver.get('http://www.facebook.com');
     console.log("Page loaded successfully.");
     await driver.sleep(3000);
-    await driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div/div/div[4]/button[2]"));
+    const cookieElement =await driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/div/div/div[4]/button[2]"));
+    await cookieElement.click();
     console.log("Clicked on 'cookies.");
     await driver.sleep(3000);
 
