@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node Test-Cases/youtube-test.js"
+    "test": "node Test-Cases/github-test.js"
     
   },
   "author": "",
