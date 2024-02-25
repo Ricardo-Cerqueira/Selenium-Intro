@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node Test-Cases/facebook-test.js"
+    "test": "node Test-Cases/youtube-test.js"
+    
   },
   "author": "",
   "license": "ISC",
