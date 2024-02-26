@@ -15,8 +15,8 @@
 
 - The current project is using Chai and Mocha frameworks. 
 
-# How to run the code for a file?
-(change in package-json the test file )
+# How to run a specfic test case?
+(change in package-json the test file name )
 
 ```shell
  npm run test
