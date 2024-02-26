@@ -27,7 +27,7 @@ async function youtubeTest() {
     // clicking on search button
     await driver.findElement(By.id('search-icon-legacy')).click();
     console.log("clicked on search button");
-    await driver.sleep(10000);
+    await driver.sleep(4000);
 
     /* Submit the form (optional)
         await searchBox.sendKeys(Key.ENTER);
