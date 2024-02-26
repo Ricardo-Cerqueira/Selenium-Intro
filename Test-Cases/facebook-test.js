@@ -5,6 +5,7 @@ describe('Facebook Registration form test-case', function() {
     it('should change the date to 7, September 1990 on Facebook registration form', async function() {
         let driver = await new Builder().forBrowser('chrome').build();
         try {
+            await driver.manage().window().maximize();
             await driver.get('http://www.facebook.com');
         
             // Assertion for the URL
