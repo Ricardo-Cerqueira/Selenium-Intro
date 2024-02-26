@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node Test-Cases/facebook-test.js",
+    "test": "mocha Test-Cases/facebook-test.js",
     "run-all": "mocha Test-Cases/**/*.js"
   },
   "author": "",
