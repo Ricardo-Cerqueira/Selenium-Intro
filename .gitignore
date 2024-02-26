@@ -1,0 +1,18 @@
+# Ignore compiled files
+*.class
+*.jar
+*.war
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore logs and temporary files
+logs/
+temp/
+
+# Ignore sensitive information
+credentials.txt
+
+# ignore mochawesome reports
+mochawesome-report/

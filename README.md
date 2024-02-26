@@ -13,7 +13,9 @@
 
 ## Aditional Info: 
 
-- The current project is using Chai and Mocha frameworks. 
+- The current project is using Chai and Mocha frameworks.
+- Added mochaweomse reporter. 
+- mochawesome-report added to .gitignore.
 
 # How to run a specfic test case?
 (change in package-json the test file name )
@@ -24,6 +26,11 @@
 
 # How to run all Tests?
 
+```shell
+$ npm run run-all
+```
+
+# How to generate a mochawesome report?
 ```shell
 $ npm run run-all
 ```
